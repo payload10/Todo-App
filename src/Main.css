@@ -1,0 +1,69 @@
+*, *::after, *::before {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+
+    margin-top: 1em;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    min-height: calc(100vh - 12em);
+}
+
+main ul {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    margin: 0 28px 0 28px;
+}
+
+main ul .groceryList .checkbox {
+
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    clip-path: circle(62% at 50% 50%);
+}
+
+main ul .groceryList h3 {
+
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+main ul .groceryList{
+
+    background-color: rgb(41, 66, 66);
+    border-radius: 12px;
+    box-shadow: 0px 6px 16px black;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    color: whitesmoke;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+main ul .groceryList .trashBox {
+
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+main ul .groceryList .trashBox:hover {
+
+    color: red;
+}
+
