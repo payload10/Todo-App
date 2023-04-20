@@ -24,7 +24,7 @@ const Main = ({groceryItems, handleCheckbox, handleDelete, addItem, setAddItem, 
 
                         <li className='groceryList' key={eachItem.id} >
                             <input type="checkbox" className='checkbox' checked={eachItem.checked} onChange= {() => handleCheckbox(eachItem.id)} />
-                            <h3>{eachItem.itemName}</h3>
+                            <h3 style={(eachItem.checked) ? {textDecoration: "line-through"} : null}>{eachItem.itemName}</h3>
                             <FaTrash className='trashBox' onClick = {() => handleDelete(eachItem.id)}/>
                         </li>
                     ))

@@ -38,7 +38,7 @@ main ul .groceryList .checkbox {
 
 main ul .groceryList h3 {
 
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
 }
 
 main ul .groceryList{
