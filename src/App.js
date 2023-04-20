@@ -8,7 +8,7 @@ import './App.css';
 function App() {
 
   // || MAIN PROP DRILLING:
-  const[groceryItems, setGroceryItems] = useState(JSON.parse(localStorage.getItem("groceryList")));
+  const[groceryItems, setGroceryItems] = useState(JSON.parse(localStorage.getItem("groceryList")) || []);
 
 
 
